@@ -1,0 +1,361 @@
+/* 
+    CS 137
+    Project 3
+    Group 1
+
+    styles.css
+*/
+
+div, h1, h2, h3, body, ul, li, img, header, p, tr, th {padding:0; margin:0;}
+
+body {
+    background-color:#d5d5d5;
+    background-size:250px 250px;
+    background-position:center top;
+    font-family:Helvetica, Arial;
+    color:#111;
+    padding-bottom:20px;
+}
+
+#header {
+	width:100%;
+	height:374px;
+	background-image:url("images/coffee_cup_header.png");
+	background-position:center;
+	overflow:hidden;
+}
+
+#title {
+	width:100%;
+	height:374px;
+	line-height:374px;
+	text-align:center;
+	font-size:300%;
+	font-family:"Courier New", monospace;
+	color:#b85300;
+	text-shadow:2px 2px 1px #111;
+}
+
+#nav.nav_rel {
+	position:relative;
+	width:100%;
+}
+
+#nav.nav_fixed {
+	position:fixed;
+	top:0px;
+	width:100%;
+}
+
+#nav {
+	z-index:999;
+	border-bottom:2px solid #b85300;
+}
+
+#nav > ul {
+	list-style-type:none;
+	text-align:center;
+	overflow:hidden;
+	background-color:#eee;
+}
+
+#nav > ul li {display:inline-block;}
+
+#nav > ul li a {
+	display:block;
+	color:#111;
+	border-bottom:3px solid;
+	border-bottom-color:#eee;
+	padding:14px 16px 11px 16px;
+	text-decoration:none;
+}
+
+#nav > ul li a:hover:not(.active) {
+	color:#b85300;
+	border-bottom:3px solid;
+	border-bottom-color:#b85300;
+    -webkit-transition:color .3s ease, border-bottom-color .3s ease;
+    -moz-transition:color .3s ease, border-bottom-color .3s ease;
+    -ms-transition:color .3s ease, border-bottom-color .3s ease;
+    -o-transition:color .3s ease, border-bottom-color .3s ease;
+    transition:color .3s ease, border-bottom-color .3s ease;
+}
+
+#nav > ul li a.active {
+	color:#b85300;
+	border-bottom:3px solid #b85300;
+}
+
+.content {
+	display:block;
+	width:900px;
+	margin:50px auto 0 auto;
+        padding-bottom:30px;
+	background-color:#eee;
+	color:#111;
+	overflow:hidden;
+	
+}
+
+.content h2 {
+	font-size:250%;
+	color:#b85300;
+	margin-right:30px;
+	margin-left:30px;
+	padding-top:30px;
+}
+
+.content p {padding:20px 30px 0 30px;}
+
+/*.content p:last-of-type {padding-bottom:20px;}*/
+
+#leftcol {
+    float:left;
+    width:33%;
+    height:100%;
+}
+#midcol {
+    float:left;
+    width:33%;
+    height:100%;
+}
+#rightcol {
+    float:left;
+    width:33%;
+    height:100%;
+}
+
+.prod {
+    width:100%;
+    height:100%;
+    border:none;
+    padding:0;
+    margin:0;
+}
+
+.addtocart {
+    margin: 20px auto 0 auto;
+    width:840px;
+    border-collapse:collapse;
+    font-size:120%;
+}
+.addtocart td {
+    border:1px solid black;
+    height:140px;
+}
+
+.addtocart td:nth-child(even) {
+    background-color:#ddd;
+}
+
+.addtocart img {
+    width:120px;
+    height:120px;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+    padding:8px;
+    margin:5px auto;
+}
+
+.cart {
+    width:840px;
+    margin-top:30px;
+    border-collapse:collapse;
+}
+
+#cart_first th {
+    height:0px;
+    padding-bottom:10px;
+}
+
+#cart_first td {
+    height:0px;
+    vertical-align:bottom;
+    padding-bottom:5px;
+}
+
+.cart th {
+    text-align:left;
+    font-size:150%;
+}
+
+.cart img {
+    height:120px;
+    width:120px;
+}
+
+.cart tr:not(#cart_first){
+    border-top:1px solid grey;
+    height:120px;
+}
+
+.cart tr:last-child {
+    border-bottom:1px solid grey;
+}
+
+.cart td {
+    height:140px;
+}
+
+#checkout_btn {
+    float:right;
+    width:210px;
+    margin-right:30px;
+    margin-top:10px;
+}
+#checkout_btn div {
+    text-align:center;
+    margin:0 auto;
+}
+
+#total {
+    margin-top:10px;
+    float:right;
+    margin-right:30px;
+    text-align:center;
+    width:210px;
+}
+
+table {
+	text-align:center;
+	color:#111;
+	width:100%;
+	margin:0 auto;
+}
+
+.hr_div {
+	width:80%;
+        margin-left:30px;
+	border-bottom:2px solid #b85300;
+}
+
+td {
+	margin:0px auto;
+	width:25%;
+	height:225px;
+}
+
+td a img:not(hover) {
+	height:150px;
+	width:150px;
+	-webkit-transition:height .3s ease, width .3s ease;
+    -moz-transition:height .3s ease, width .3s ease;
+    -ms-transition:height .3s ease, width .3s ease;
+    -o-transition:height .3s ease, width .3s ease;
+    transition:height .3s ease, width .3s ease;
+}
+
+td a img:hover {
+	height:175px;
+	width:175px;
+	-webkit-transition:height .3s ease, width .3s ease;
+    -moz-transition:height .3s ease, width .3s ease;
+    -ms-transition:height .3s ease, width .3s ease;
+    -o-transition:height .3s ease, width .3s ease;
+    transition:height .3s ease, width .3s ease;
+}
+
+.checkout {
+	display:table;
+	width:865px;
+	margin:50px auto 10px auto;
+	padding:10px;
+	background-color:#eee;
+	color:#111;
+}
+
+#item_info {
+	float:left;
+	width:350px;
+	text-align:right;
+	margin:10px 10px;
+}
+
+#item_image {
+    float:left;
+    margin-left:10px;
+    margin-top:15px;
+    padding:0;
+}
+
+#checkout_form {
+	margin:30px 30px 0 30px;
+}
+#checkout_form p {margin-top:5px; margin-left:0px; padding-left:0px;}
+
+
+
+.checkout_row{
+    clear:both;
+    float:left;
+}
+.checkout_row h3 {
+    margin-bottom:5px;
+}
+.checkout_row p {
+    margin:0; padding:0;
+}
+.checkout_row.last{
+    margin-bottom:20px;
+}
+.checkout_col {
+    float:left;
+    margin-right:20px;
+    padding-right:0;
+}
+
+.order {
+    width:840px;
+    margin-left:30px;
+    margin-right:30px;
+    margin-top:20px;
+    border-collapse:collapse;
+}
+.order td {
+    height:0;
+    padding-top:4px;
+    padding-bottom:4px;
+    text-align:left;
+}
+.order th {
+    padding-bottom:4px;
+    text-align:left;
+}
+.order tr.first {border-bottom:1px solid grey;}
+
+.order tr.last {border-top:1px solid grey;}
+
+td.subtotal {
+    padding-right:5px;
+    text-align:right;
+}
+
+.viewers {
+    margin-right:30px;
+    margin-top:10px;
+}
+#addtocart_btn {
+    margin-right:30px;
+}
+#co_item_price {
+    margin:10px 30px 10px 0;
+}
+
+.form_container {clear:both;padding-top:10px;}
+.form_left {float:left;margin-right:5px;}
+.form_right {float:right;}
+
+.conf_error_img {
+	display:block;
+	width:320px;
+	height:240px;
+	margin:0 auto;
+	padding-bottom:20px;
+}
